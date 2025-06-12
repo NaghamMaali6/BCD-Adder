@@ -1,1 +1,10 @@
 # BCD-Adder
+The goal of this project is to design and implement a 3-digit BCD (Binary-Coded Decimal) adder using structural modeling in Verilog HDL, and then verify its functionality and timing using simulation tools. The project is divided into two stages, each exploring a different type of adder: Ripple Carry Adder in Stage 1 and Carry Look-Ahead Adder in Stage 2.
+BCD (Binary-Coded Decimal) is a way of representing decimal numbers where each digit is coded using 4 binary bits. For example, the decimal number 529 is represented in BCD as three separate groups: 0101 (5), 0010 (2), and 1001 (9). BCD is especially important in digital systems that interact with decimal data, like calculators, digital displays, and financial systems, where accuracy in representing decimal digits is essential.
+In this project, the 3-digit BCD adder receives its inputs and produces outputs through registers (flip-flops). The design is done structurally, meaning each component (like full adders or logic gates) is built from basic gates such as AND, OR, XOR, etc., with specified gate delays. The design follows a bottom-up approach: I start with a 1-bit full adder, then build a 4-bit binary adder, then use that to create a 1-digit BCD adder, and finally combine three of them to make a 3-digit BCD 
+adder.
+In Stage 1, a Ripple Carry Adder (RCA) is used. This type of adder is simple to build but has a slower carry propagation time. In Stage 2, a Carry Look-Ahead Adder (CLA) is introduced. It speeds up the addition process by reducing the delay caused by carry propagation.
+Both stages include not only functional simulation but also timing analysis to find the maximum latency and therefore the maximum operating clock frequency. Additionally, each stage includes a test scenario where a bug is intentionally introduced, and a verification mechanism is used to detect the error and write it to a file.
+By the end of this project, I gain hands-on experience in digital design, structural modeling, simulation, and understanding how adder types affect the performance of arithmetic circuits.
+
+check Report.pdf to know more about this project.
