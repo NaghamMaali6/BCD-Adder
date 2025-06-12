@@ -1,0 +1,11 @@
+[Version]
+Version=15.0
+[Designs]
+project1212312=.\Project1212312\Project1212312.adf
+[Browser]
+sort=order
+mode=asc
+[Order]
+order=1
+[Expand]
+project1212312=1
